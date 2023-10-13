@@ -36,8 +36,8 @@
             <td><?php echo $empresa["nombre_empresa"] ?></td>
             <td><?php echo $empresa["telefono"] ?></td>
             <td><?php echo $empresa["email"] ?></td>
-            <td><a class="btn btn-secondary" href="editar.php?id=<?php echo $empresa['cif'] ?>">Editar</a></td>
-            <td><a class="btn btn-danger" href="eliminar.php?id=<?php echo $empresa['cif'] ?>">Eliminar</a></td>
+            <td><a class="btn btn-secondary" href="empresa-editar.php?cif=<?php echo $empresa['cif'] ?>">Editar</a></td>
+            <td><a class="btn btn-danger" href="eliminar.php?cif=<?php echo $empresa['cif'] ?>">Eliminar</a></td>
             </tr>
 
     <?php }
