@@ -25,4 +25,4 @@ $sentencia->execute();
 
 $mysqli->close();
 
-header("Location: empresa-alta.html");
+header("Location: empresa-listado.php");
