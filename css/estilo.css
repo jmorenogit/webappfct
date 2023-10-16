@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+    background-color: lightgrey;
+    --fondobg: white;
+    --botonbg: DimGray;
+    --botonbordehover: lightskyblue;
+    /* --botonop: 0.85; */
+    --anchofondo: 80%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* +++++++++++++++++++++++ LISTADOS +++++++++++++++++++++++++++++*/
+.listado {
+    background-color: var(--fondobg);
+    border: medium solid var(--fondobg);
+    text-align: center;
+    border-collapse: collapse;
+    width: var(--anchofondo);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listado tr {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 2rem;
+}
+
+.listado td {
+    padding: 1rem;
+}
+
+.btn-listado {
+    background-color: var(--botonbg);
+    color: white;
+    border-radius: 0.25rem;
+    border: medium solid var(--botonbg);
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+.btn-listado:hover {
+    opacity: var(--botonop);
+    border: medium solid var(--botonbordehover);
+}
+
+/* ++++++++++++++++++++++ FORMULARIOS +++++++++++++++++++++++++++*/
+
+.formulario {
+    background-color: var(--fondobg);
+    border: thin solid var(--fondobg);
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--anchofondo);
+    padding: 1rem;
+}
+
+.formulario > * {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.formulario input[type="submit"] {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    background-color: var(--botonbg);
+    border: medium solid var(--botonbg);
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.formulario input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: var(--botonop);
+    border: medium solid var(--botonbordehover);
+}
