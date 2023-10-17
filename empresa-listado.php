@@ -9,26 +9,25 @@
 <body>
 
 <header>
-    <h1>Listado de Empresas</h1>
+
 </header>
 
 <main>
 
     <article>
-
-        <section>
-            <form class="formulario" action="empresa-alta.html" method="POST">
-                <input type="submit" value="Nueva empresa">
-            </form>
-        </section>
-
         <section>
             <table class="listado">
             <thead>
                 <tr>
+                    <td colspan=3><h2>Listado de Empresas</h2></td>
+                    <td></td>
+                    <td colspan=3>
+                        <a class="btn-listado" href="empresa-alta.html">Nueva empresa</a>
+                    </td>
+                </tr>
+                <tr>
                 <th>CIF</th>
                 <th>Nombre</th>
-                <th>Ciudad</th>
                 <th>Teléfono</th>
                 <th>Email</th>
                 <th colspan=3>Acciones</th>
@@ -45,7 +44,6 @@
                 <tr>
                 <td><?php echo $empresa["cif"] ?></td>
                 <td><?php echo $empresa["nombre_empresa"] ?></td>
-                <td><?php echo $empresa["ciudad"] ?></td>
                 <td><?php echo $empresa["telefono"] ?></td>
                 <td><?php echo $empresa["email"] ?></td>
                 <td><a class="btn-listado" href="empresa-ver.php?cif=<?php echo $empresa['cif'] ?>">Visualizar</a></td>
@@ -58,11 +56,9 @@
                 ?>
             </tbody>
             </table>
-        </section>
-        
+        </section>    
     </article>
 </main>
-
     
 </body>
 </html>

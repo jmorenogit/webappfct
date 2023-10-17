@@ -23,11 +23,11 @@
         $mysqli->close();
     ?>
 <main>
-    <h1>Editar Empresa</h1>
 
     <article>
         <section>
             <form class="formulario" action="empresa-editar-update.php" method="post">
+                <legend><h2>Editar Empresa</h2></legend>
                 <label for="cif">CIF</label><input type="text" name="cif" id="cif" value="<?php echo $empresa['cif'] ?>">
                 <label for="nombre_empresa">Nombre Empresa</label><input type="text" name="nombre_empresa" id="nombre_empresa" value="<?php echo $empresa['nombre_empresa'] ?>">
                 <label for="calle">Dirección</label><input type="text" name="calle" id="calle" value="<?php echo $empresa['calle'] ?>">
@@ -40,7 +40,7 @@
                 <label for="responsable_dni">DNI responsable</label><input type="text" name="responsable_dni" id="responsable_dni" value="<?php echo $empresa['responsable_dni'] ?>">
                 <label for="tutor">Tutor empresa</label><input type="text" name="tutor" id="tutor" value="<?php echo $empresa['tutor'] ?>">
                 <label for="departamento">Departamento</label><input type="text" name="departamento" id="departamento" value="<?php echo $empresa['departamento'] ?>">
-                <label for="actividad_productiva"></label>Actividad Productiva<input type="text" name="actividad_productiva" id="actividad_productiva" value="<?php echo $empresa['actividad_productiva'] ?>">
+                <label for="actividad_productiva">Actividad Productiva</label><input type="text" name="actividad_productiva" id="actividad_productiva" value="<?php echo $empresa['actividad_productiva'] ?>">
                 <input type="submit" value="Enviar">
             </form>
         </section>

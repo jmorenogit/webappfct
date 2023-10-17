@@ -23,25 +23,61 @@
         $mysqli->close();
     ?>
 <main>
-    <h1>Información de Empresa</h1>
 
     <article>
         <section>
-            <form class="formulario" action="empresa-editar-update.php" method="post">
-                <label for="cif">CIF</label><input type="text" name="cif" id="cif" value="<?php echo $empresa['cif'] ?>" readonly>
-                <label for="nombre_empresa">Nombre Empresa</label><input type="text" name="nombre_empresa" id="nombre_empresa" value="<?php echo $empresa['nombre_empresa'] ?>" readonly>
-                <label for="calle">Dirección</label><input type="text" name="calle" id="calle" value="<?php echo $empresa['calle'] ?>" readonly>
-                <label for="cod_postal">CP</label><input type="text" name="cod_postal" id="cod_postal" value="<?php echo $empresa['cod_postal'] ?>" readonly>
-                <label for="ciudad">Ciudad</label><input type="text" name="ciudad" id="ciudad" value="<?php echo $empresa['ciudad'] ?>" readonly>
-                <label for="provincia">Provincia</label><input type="text" name="provincia" id="provincia" value="<?php echo $empresa['provincia'] ?>" readonly>
-                <label for="telefono">Telefono</label><input type="text" name="telefono" id="telefono" value="<?php echo $empresa['telefono'] ?>" readonly>
-                <label for="email">Email</label><input type="email" name="email" id="email" value="<?php echo $empresa['email'] ?>" readonly>
-                <label for="responsable_nombre">Nombre responsable</label><input type="text" name="responsable_nombre" id="responsable_nombre" value="<?php echo $empresa['responsable_nombre'] ?>" readonly>
-                <label for="responsable_dni">DNI responsable</label><input type="text" name="responsable_dni" id="responsable_dni" value="<?php echo $empresa['responsable_dni'] ?>" readonly>
-                <label for="tutor">Tutor empresa</label><input type="text" name="tutor" id="tutor" value="<?php echo $empresa['tutor'] ?>" readonly>
-                <label for="departamento">Departamento</label><input type="text" name="departamento" id="departamento" value="<?php echo $empresa['departamento'] ?>" readonly>
-                <label for="actividad_productiva"></label>Actividad Productiva<input type="text" name="actividad_productiva" id="actividad_productiva" value="<?php echo $empresa['actividad_productiva'] ?>" readonly>
-            </form>
+            <table class="listado">
+            <thead>
+                <tr>
+                    <td colspan=2>
+                        <h2><?php echo $empresa["nombre_empresa"] ?></h2>
+                    </td>
+                    <th>
+                       CIF: <?php echo $empresa["cif"] ?>
+                    </th>
+                </tr>     
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Dirección</th>
+                    <th>CP</th>
+                    <th>Ciudad</th>
+                </tr>
+                <tr>
+                    <td><?php echo $empresa["calle"] ?></td>
+                    <td><?php echo $empresa["cod_postal"] ?></td>
+                    <td><?php echo $empresa["ciudad"] ?></td>
+                </tr>
+                <tr>
+                    <th>Provincia</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>                    
+                </tr>
+                <tr>
+                    <td><?php echo $empresa["provincia"] ?></td>
+                    <td><?php echo $empresa["telefono"] ?></td>
+                    <td><?php echo $empresa["email"] ?></td>
+                </tr>
+                <tr>
+                    <th colspan=2>Responsable</th>
+                    <th>Responsable DNI</th>   
+                </tr>
+                <tr>
+                    <td colspan=2><?php echo $empresa["responsable_nombre"] ?></td>
+                    <td><?php echo $empresa["responsable_dni"] ?></td>      
+                </tr>
+                <tr>
+                    <th>Tutor</th>
+                    <th>Departamento</th>
+                    <th>Actividad_productiva</th>
+                </tr>
+                <tr>
+                    <td><?php echo $empresa["tutor"] ?></td>
+                    <td><?php echo $empresa["departamento"] ?></td>
+                    <td><?php echo $empresa["actividad_productiva"] ?></td>
+                </tr>
+            </tbody>
+            </table>
         </section>
     </article>
     </main>

@@ -3,9 +3,9 @@ html {
     background-color: lightgrey;
     --fondobg: white;
     --botonbg: DimGray;
-    --botonbordehover: lightskyblue;
+    --colorhover: lightskyblue;
     /* --botonop: 0.85; */
-    --anchofondo: 80%;
+    --anchofondo: 60%;
 }
 
 *,
@@ -14,14 +14,9 @@ html {
     box-sizing: inherit;
 }
 
-h1 {
-    text-align: center;
-}
-
 /* +++++++++++++++++++++++ LISTADOS +++++++++++++++++++++++++++++*/
 .listado {
     background-color: var(--fondobg);
-    border: medium solid var(--fondobg);
     text-align: center;
     border-collapse: collapse;
     width: var(--anchofondo);
@@ -32,7 +27,6 @@ h1 {
 .listado tr {
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-    padding: 2rem;
 }
 
 .listado td {
@@ -42,7 +36,7 @@ h1 {
 .btn-listado {
     background-color: var(--botonbg);
     color: white;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     border: medium solid var(--botonbg);
     padding: 0.5em 0.5em;
     text-decoration: none;
@@ -50,14 +44,14 @@ h1 {
 
 .btn-listado:hover {
     opacity: var(--botonop);
-    border: medium solid var(--botonbordehover);
+    border: medium solid var(--colorhover);
+    color: var(--colorhover);
 }
 
 /* ++++++++++++++++++++++ FORMULARIOS +++++++++++++++++++++++++++*/
 
 .formulario {
     background-color: var(--fondobg);
-    border: thin solid var(--fondobg);
     margin-left: auto;
     margin-right: auto;
     width: var(--anchofondo);
@@ -66,9 +60,20 @@ h1 {
 
 .formulario > * {
     display: block;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1.5rem auto 1.5rem auto;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+
+.formulario legend{
+    text-align: center;
+    border-bottom: none;
+}
+.formulario input:focus{
+    outline: none;
 }
 
 .formulario input[type="submit"] {
@@ -76,9 +81,10 @@ h1 {
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 20%;
     background-color: var(--botonbg);
     border: medium solid var(--botonbg);
+    border-radius: 0.5rem;
     font-weight: bold;
     color: #fff;
 }
@@ -87,5 +93,6 @@ h1 {
 .formulario input[type="submit"]:hover {
     cursor: pointer;
     opacity: var(--botonop);
-    border: medium solid var(--botonbordehover);
+    border: medium solid var(--colorhover);
+    color: var(--colorhover);
 }
