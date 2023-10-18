@@ -58,7 +58,6 @@
             </table>
         </section>    
     </article>
-</main>
-    
+</main>  
 </body>
 </html>

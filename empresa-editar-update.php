@@ -19,7 +19,7 @@ $actividad_productiva = $_POST["actividad_productiva"];
 
 //Actualización en Base de Datos
 $sentencia = $mysqli->prepare("UPDATE empresas SET nombre_empresa=?, calle=?, cod_postal=?, ciudad=?, provincia=?, telefono=?, email=?, responsable_nombre=?, responsable_dni=?, tutor=?, departamento=?, actividad_productiva=? WHERE cif=?");
-$sentencia->bind_param("sssssssssssss", $nombre_empresa, $calle, $cod_postal, $ciudad, $provincia, $telefono, $email, $responsable_nombre, $responsable_dni, $tutor, $departamento, $actividad_productiva,$cif);
+$sentencia->bind_param("sssssssssssss", $nombre_empresa, $calle, $cod_postal, $ciudad, $provincia, $telefono, $email, $responsable_nombre, $responsable_dni, $tutor, $departamento, $actividad_productiva, $cif);
 $sentencia->execute();
 
 $mysqli->close();

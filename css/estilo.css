@@ -72,6 +72,16 @@ html {
     text-align: center;
     border-bottom: none;
 }
+
+.formulario label{
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.formulario input:read-only{
+    color:DimGray;
+}
+
 .formulario input:focus{
     outline: none;
 }
