@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                 <th>CIF</th>
-                <th>Nombre</th>
+                <th><p align="center">Nombre <span class="sortable">&uarr;</span></p></th>
                 <th>Teléfono</th>
                 <th>Email</th>
                 <th colspan=3>Acciones</th>
