@@ -17,12 +17,21 @@
     <article>
         <section>
             <table class="listado">
+                <tr>
+                    <td colspan="3"><h2>Listado de Empresas</h2></td>
+                    <td></td>
+                    <td colspan="3">
+                        <a class="btn-listado" href="empresa-alta.html">Nueva empresa</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <table class="listado" id="myTable">
             <thead>
                 <tr>
-                    <td colspan=3><h2>Listado de Empresas</h2></td>
-                    <td></td>
-                    <td colspan=3>
-                        <a class="btn-listado" href="empresa-alta.html">Nueva empresa</a>
+                    <td colspan="7">
+                        <input type="search" size="50%" id="search" onkeyup="search()" placeholder="Buscar empresas.." title="Escribe un nombre">
                     </td>
                 </tr>
                 <tr>
@@ -58,6 +67,7 @@
             </table>
         </section>    
     </article>
-</main>  
+</main>
+<script src="js/script.js"></script>  
 </body>
 </html>
