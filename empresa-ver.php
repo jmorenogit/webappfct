@@ -75,6 +75,9 @@
                     <td><?php echo $empresa["departamento"] ?></td>
                     <td><?php echo $empresa["actividad_productiva"] ?></td>
                 </tr>
+                <tr>
+                    <td colspan="3"><a class="btn-listado" href="empresa-listado.php">Volver</a></td>
+                </tr>
             </tbody>
             </table>
         </section>
