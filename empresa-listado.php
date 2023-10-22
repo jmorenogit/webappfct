@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
 
 <header>
-
+<!-- <button onclick="darkMode()">Dark Mode</button> -->
 </header>
 
 <main>
@@ -35,26 +35,26 @@
                     </td>
                 </tr>
                 <tr>
-                <th>CIF</th>
+                <th class="cif">CIF</th>
                 <th><p align="center">Nombre <span class="sortable">&uarr;</span></p></th>
+                <th>Localidad</th>
                 <th>Teléfono</th>
-                <th>Email</th>
                 <th colspan=3>Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 <?php 
                     $mysqli = include_once "conexion-bd.php";
-                    $resultado = $mysqli->query("SELECT cif, nombre_empresa, ciudad, telefono, email FROM empresas");
+                    $resultado = $mysqli->query("SELECT cif, nombre_empresa, ciudad, telefono FROM empresas");
                     $empresas = $resultado->fetch_all(MYSQLI_ASSOC);
                     foreach ($empresas as $empresa)
                     {
                 ?>
                 <tr>
-                <td><?php echo $empresa["cif"] ?></td>
+                <td class="cif"><?php echo $empresa["cif"] ?></td>
                 <td><?php echo $empresa["nombre_empresa"] ?></td>
+                <td><?php echo $empresa["ciudad"] ?></td>
                 <td><?php echo $empresa["telefono"] ?></td>
-                <td><?php echo $empresa["email"] ?></td>
                 <td><a class="btn-listado" href="empresa-ver.php?cif=<?php echo $empresa['cif'] ?>">Visualizar</a></td>
                 <td><a class="btn-listado" href="empresa-editar.php?cif=<?php echo $empresa['cif'] ?>">Editar</a></td>
                 <td><a class="btn-listado" href="empresa-eliminar.php?cif=<?php echo $empresa['cif'] ?>">Eliminar</a></td>

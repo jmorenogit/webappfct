@@ -1,6 +1,11 @@
+//******************************* Dark Mode  ************************************//
+function darkMode() {
+  let element = document.getElementById("html");
+  element.classList.toggle("dark-mode");
+}
 //******************************* CUADRO BÚSQUEDA  ************************************//
 function search() {
-  var input, filter, table, tr, td, i, txtValue;
+  let input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("search");
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");

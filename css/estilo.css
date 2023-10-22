@@ -14,6 +14,16 @@ html {
     box-sizing: inherit;
 }
 
+.dark-mode {
+    background-color: lightgrey;
+    color: #000;
+    filter: invert(1);
+}
+
+/* .dark-mode img {
+    filter: invert(1);
+} */
+
 /* +++++++++++++++++++++++ LISTADOS +++++++++++++++++++++++++++++*/
 .listado {
     background-color: var(--fondobg);
@@ -31,6 +41,10 @@ html {
 
 .listado td {
     padding: 1rem;
+}
+
+.cif {
+    display:none;
 }
 
 .btn-listado {
