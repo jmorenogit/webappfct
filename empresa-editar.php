@@ -6,6 +6,10 @@
     <title>Editar Empresa</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+<header>
+<!-- <button onclick="darkMode()">Dark Mode</button> -->
+<nav><?php include 'menu.php' ?></nav>
+</header>
 <body>
 
     <?php

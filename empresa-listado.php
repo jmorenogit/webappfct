@@ -10,6 +10,7 @@
 
 <header>
 <!-- <button onclick="darkMode()">Dark Mode</button> -->
+<nav><?php include 'menu.php' ?></nav>
 </header>
 
 <main>
@@ -21,7 +22,7 @@
                     <td colspan="3"><h2>Listado de Empresas</h2></td>
                     <td></td>
                     <td colspan="3">
-                        <a class="btn-listado" href="empresa-alta.html">Nueva empresa</a>
+                        <a class="btn-listado" href="empresa-alta.php">Nueva empresa</a>
                     </td>
                 </tr>
             </table>
