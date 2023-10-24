@@ -6,9 +6,8 @@
     <title>menu</title>
 </head>
 <body>
-    <ul>
-        <li><a href="alumno-listado.php">Alumnos</a></li>
-        <li><a href="empresa-listado.php">Empresas</a></li>
-    </ul>
+    <a href="alumno-listado.php">Alumnos</a>
+    <a href="empresa-listado.php">Empresas</a></li>
+    <a href="profesor-listado.php">Profesores</a>
 </body>
 </html>

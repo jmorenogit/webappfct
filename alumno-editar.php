@@ -34,7 +34,7 @@
                 <label for="dni">DNI</label><input type="text" name="dni" id="dni" value="<?php echo $alumno['dni'] ?>" readonly>
                 <label for="num_expdte">Num Expediente</label><input type="text" name="num_expdte" id="num_expdte" value="<?php echo $alumno['num_expdte'] ?>" pattern="[0-9]{1,15}" title="Sólo dígitos con un máximo de 15" require>
                 <label for="nombre_alumno">Nombre alumno</label><input type="text" name="nombre_alumno" id="nombre_alumno" value="<?php echo $alumno['nombre'] ?>" pattern="[Aa-Za]{30}" title="Máximo 30 caracteres">
-                <label for="apellido_alumno">Apellido alumno</label><input type="text" name="apellido_alumno" id="apellido_alumno" value="<?php echo $alumno['apellidos'] ?>" pattern="[Aa-Za]{30}" title="Máximo 30 caracteres">
+                <label for="apellidos_alumno">Apellidos alumno</label><input type="text" name="apellidos_alumno" id="apellidos_alumno" value="<?php echo $alumno['apellidos'] ?>" pattern="[Aa-Za]{30}" title="Máximo 30 caracteres">
                 <label for="calle">Dirección</label><input type="text" name="calle" id="calle" value="<?php echo $alumno['calle'] ?> "pattern="{30}" title="Máximo 30 caracteres">
                 <label for="cod_postal">CP</label><input type="text" name="cod_postal" id="cod_postal" value="<?php echo $alumno['cod_postal'] ?>" pattern="[0-9]{5}" title="Máximo 5 dígitos">
                 <label for="ciudad">Ciudad</label><input type="text" name="ciudad" id="ciudad" value="<?php echo $alumno['ciudad'] ?>" pattern="[Aa-Za]{20}" title="Máximo 20 caracteres">

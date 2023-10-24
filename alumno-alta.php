@@ -16,8 +16,8 @@
         <article>
             <section>
                 <form class="formulario" action="alumno-alta-proc.php" method="post">
-                    <legend><h2>Alta nueva empresa</h2></legend>
-                    <input type="text" name="dni" id="dni" placeholder="DNI alumno" pattern="(([0-9]{8}[ABCDEFGHJKLMNPQRSUVW]{1}))" title="8 dígitos y Letra mayúscula" required>
+                    <legend><h2>Alta nuevo alumno</h2></legend>
+                    <input type="text" name="dni" id="dni" placeholder="DNI alumno" pattern="(([0-9]{8}[A-Z]{1}))" title="8 dígitos y Letra mayúscula" required>
                     <input type="text" name="num_expdte" id="num_expdte" placeholder="Num. expediente" pattern="[0-9]{1,15}" title="Sólo dígitos con un máximo de 15" required>
                     <input type="text" name="nombre_alumno" id="nombre_alumno" placeholder="Nombre alumno" pattern="[Aa-Za]{30}" title="Máximo 30 caracteres" required>
                     <input type="text" name="apellidos_alumno" id="apellidos_alumno" placeholder="Apellidos alumno" pattern="[Aa-Za]{30}" title="Máximo 30 caracteres" required>
