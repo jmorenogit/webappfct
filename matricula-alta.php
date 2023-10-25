@@ -30,12 +30,13 @@
                         ?>
                 
                         <option value=<?php echo $alumno["dni"]?>>
-                            <?php echo "DNI: ".$alumno["dni"]." Nombre: ".$alumno["nombre"]." ".$alumno["apellidos"] ?>
+                            <?php echo "DNI: ".$alumno["dni"]." - Nombre: ".$alumno["nombre"]." ".$alumno["apellidos"] ?>
                         </option>
                 
 
                         <?php } ?>
                     </select>
+
                     <label for="empresas"><b>Empresa</b></label>
                     <select name="empresas" id="empresas">
                         <?php 
@@ -46,7 +47,24 @@
                         ?>
                 
                         <option value=<?php echo $empresa["cif"]?>>
-                            <?php echo "CIF: ".$empresa["cif"]." Empresa: ".$empresa["nombre_empresa"]." Localidad: ".$empresa["ciudad"] ?>
+                            <?php echo "CIF: ".$empresa["cif"]." - Empresa: ".$empresa["nombre_empresa"]." - Localidad: ".$empresa["ciudad"] ?>
+                        </option>
+                
+
+                        <?php } ?>
+                    </select>
+                    
+                    <label for="profesores"><b>Profesor</b></label>
+                    <select name="profesores" id="profesores">
+                        <?php 
+                        $resultado = $mysqli->query("SELECT dni_profesor, nombre_profesor, apellidos_profesor FROM profesores");
+                        $profesores = $resultado->fetch_all(MYSQLI_ASSOC);
+                        foreach ($profesores as $profesor)
+                        {
+                        ?>
+                
+                        <option value=<?php echo $profesor["dni_profesor"]?>>
+                            <?php echo "DNI: ".$profesor["dni_profesor"]." - Nombre: ".$profesor["nombre_profesor"]." Apellidos: ".$profesor["apellidos_profesor"] ?>
                         </option>
                 
 

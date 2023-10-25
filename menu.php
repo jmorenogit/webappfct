@@ -7,7 +7,9 @@
 </head>
 <body>
     <a href="alumno-listado.php">Alumnos</a>
-    <a href="empresa-listado.php">Empresas</a></li>
+    <a href="ciclo-listado.php">Ciclos</a>
+    <a href="empresa-listado.php">Empresas</a>
+    <a href="matricula-alta.php">Matrículas</a>
     <a href="profesor-listado.php">Profesores</a>
 </body>
 </html>
