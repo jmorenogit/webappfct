@@ -15,8 +15,10 @@
 
         <article>
             <section>
-                <form class="formulario" action="alumno-matricula-proc.php" method="post">
+                <form class="formulario" action="matricula-alta-proc.php" method="post">
                     <legend><h2>Alta nueva matrícula</h2></legend>
+                    <label for="num_matricula"><b>Número matrícula</b></label>
+                    <input type="text" name="num_matricula" id="num_matricula" required>
                     <label for="fecha"><b>Fecha</b></label>
                     <input type="date" name="fecha" id="fecha">
                     <label for="alumnos"><b>Alumno</b></label>
@@ -65,6 +67,23 @@
                 
                         <option value=<?php echo $profesor["dni_profesor"]?>>
                             <?php echo "DNI: ".$profesor["dni_profesor"]." - Nombre: ".$profesor["nombre_profesor"]." Apellidos: ".$profesor["apellidos_profesor"] ?>
+                        </option>
+                
+
+                        <?php } ?>
+                    </select>
+
+                    <label for="ciclos"><b>Ciclos</b></label>
+                    <select name="ciclos" id="ciclos">
+                        <?php 
+                        $resultado = $mysqli->query("SELECT * FROM ciclos");
+                        $ciclos = $resultado->fetch_all(MYSQLI_ASSOC);
+                        foreach ($ciclos as $ciclo)
+                        {
+                        ?>
+                
+                        <option value=<?php echo $ciclo["clave_ciclo"]?>>
+                            <?php echo "Clave ciclo: ".$ciclo["clave_ciclo"]." - Nombre: ".$ciclo["nombre_ciclo"] ?>
                         </option>
                 
 
