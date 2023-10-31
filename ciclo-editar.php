@@ -32,6 +32,7 @@
             <form class="formulario" action="ciclo-editar-update.php" method="post">
                 <legend><h2>Editar ciclo</h2></legend>
                 <label for="clave_ciclo">Clave ciclo</label><input type="text" name="clave_ciclo" id="clave_ciclo" value="<?php echo $ciclo['clave_ciclo'] ?>" readonly>
+                <label for="siglas_ciclo">Siglas ciclo</label><input type="text" name="siglas_ciclo" id="siglas_ciclo" value="<?php echo $ciclo['siglas_ciclo'] ?> "pattern="{30}" title="Máximo 30 caracteres">
                 <label for="nombre_ciclo">Nombre ciclo</label><input type="text" name="nombre_ciclo" id="nombre_ciclo" value="<?php echo $ciclo['nombre_ciclo'] ?>" pattern="[Aa-Za]{50}" title="Máximo 50 caracteres">
                 <label for="familia_profesional">Familia profesional</label><input type="text" name="familia_profesional" id="familia_profesional" value="<?php echo $ciclo['familia_profesional'] ?>" pattern="[Aa-Za]{30}" title="Máximo 30 caracteres">
                 <label for="tipo_ciclo">Tipo ciclo</label><input type="text" name="tipo_ciclo" id="tipo_ciclo" value="<?php echo $ciclo['tipo_ciclo'] ?> "pattern="{30}" title="Máximo 30 caracteres">

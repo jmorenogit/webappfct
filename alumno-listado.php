@@ -38,6 +38,7 @@
                 <tr>
                 <th class="cif">DNI</th>
                 <th><p align="center">Nombre <span class="sortable">&uarr;</span></p></th>
+                <th>Apellidos</th>
                 <th>Localidad</th>
                 <th>Teléfono</th>
                 <th colspan=3>Acciones</th>
@@ -46,7 +47,7 @@
             <tbody>
                 <?php 
                     $mysqli = include_once "conexion-bd.php";
-                    $resultado = $mysqli->query("SELECT dni, nombre, ciudad, telefono FROM alumnos");
+                    $resultado = $mysqli->query("SELECT dni, nombre, apellidos, ciudad, telefono FROM alumnos");
                     $alumnos = $resultado->fetch_all(MYSQLI_ASSOC);
                     foreach ($alumnos as $alumno)
                     {
@@ -54,6 +55,7 @@
                 <tr>
                 <td class="cif"><?php echo $alumno["dni"] ?></td>
                 <td><?php echo $alumno["nombre"] ?></td>
+                <td><?php echo $alumno["apellidos"] ?></td>
                 <td><?php echo $alumno["ciudad"] ?></td>
                 <td><?php echo $alumno["telefono"] ?></td>
                 <td><a class="btn-listado" href="alumno-ver.php?dni=<?php echo $alumno['dni'] ?>">Visualizar</a></td>

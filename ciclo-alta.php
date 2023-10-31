@@ -16,8 +16,9 @@
         <article>
             <section>
                 <form class="formulario" action="ciclo-alta-proc.php" method="post">
-                    <legend><h2>Alta nuevo ciclo formativo</h2></legend>
+                    <legend><h2>Alta ciclo formativo</h2></legend>
                     <input type="text" name="clave_ciclo" id="clave_ciclo" placeholder="Clave ciclo" required>
+                    <input type="text" name="siglas_ciclo" id="siglas_ciclo" placeholder="Siglas ciclo" pattern="[Aa-Za]{8}" title="Máximo 8 caracteres" required>
                     <input type="text" name="nombre_ciclo" id="nombre_ciclo" placeholder="Nombre ciclo" pattern="[Aa-Za]{50}" title="Máximo 50 caracteres" required>
                     <input type="text" name="familia_profesional" id="familia_profesional" placeholder="Familia profesional" pattern="[Aa-Za]{30}" title="Máximo 30 caracteres" required>
                     <input type="text" name="tipo_ciclo" id="tipo_ciclo" placeholder="Tipo de ciclo" pattern="{30}" title="Máximo 30 caracteres" required>

@@ -37,7 +37,8 @@
                 </tr>
                 <tr>
                 <th class="cif">Número matrícula</th>
-                <th><p align="center">Alumno <span class="sortable">&uarr;</span></p></th>
+                <th><p align="center">Alumno<span class="sortable">&uarr;</span></p></th>
+                <th>Curso académico<span class="sortable">&uarr;</span></th>   
                 <th>Empresa</th>
                 <th>Ciclo</th>
                 <th colspan=3>Acciones</th>
@@ -54,10 +55,10 @@
                 <tr>
                 <td class="cif"><?php echo $matricula["num_matricula"] ?></td>
                 <td><?php echo $matricula["nombre"]." ".$matricula["apellidos"] ?></td>
+                <td><?php echo $matricula["curso_academico"] ?></td>
                 <td><?php echo $matricula["nombre_empresa"] ?></td>
-                <td><?php echo $matricula["nombre_ciclo"] ?></td>
+                <td><?php echo $matricula["siglas_ciclo"] ?></td>
                 <td><a class="btn-listado" href="matricula-ver.php?num_matricula=<?php echo $matricula['num_matricula'] ?>">Visualizar</a></td>
-                <td><a class="btn-listado" href="#matricula-editar.php?num_matricula=<?php echo $matricula['num_matricula'] ?>">Editar</a></td>
                 <td><a class="btn-listado" href="matricula-eliminar.php?num_matricula=<?php echo $matricula['num_matricula'] ?>">Eliminar</a></td>
                 </tr>
 

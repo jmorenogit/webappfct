@@ -5,15 +5,16 @@ $mysqli = include_once "conexion-bd.php";
 
 //Recepción valores formulario
 $num_matricula = $_POST["num_matricula"];
-$fecha = $_POST["fecha"];
+$curso_academico = $_POST["curso_academico"];
 $alumnos = $_POST["alumnos"];
 $empresas = $_POST["empresas"];
 $profesores = $_POST["profesores"];
 $ciclos = $_POST["ciclos"];
+$periodo = $_POST["periodo"];
 
 //Inserción en Base de Datos
-$sentencia = $mysqli->prepare("INSERT INTO matriculas VALUES (?,?,?,?,?,?)");
-$sentencia->bind_param("ssssss", $num_matricula, $fecha, $alumnos, $empresas, $profesores, $ciclos);
+$sentencia = $mysqli->prepare("INSERT INTO matriculas VALUES (?,?,?,?,?,?,?)");
+$sentencia->bind_param("sssssss", $num_matricula, $curso_academico, $alumnos, $empresas, $profesores, $ciclos, $periodo);
 $sentencia->execute();
 
 

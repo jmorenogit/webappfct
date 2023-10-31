@@ -19,8 +19,8 @@
                     <legend><h2>Alta nueva matrícula</h2></legend>
                     <label for="num_matricula"><b>Número matrícula</b></label>
                     <input type="text" name="num_matricula" id="num_matricula" required>
-                    <label for="fecha"><b>Fecha</b></label>
-                    <input type="date" name="fecha" id="fecha">
+                    <label for="curso_academico"><b>Curso Academico</b></label>
+                    <input type="text" name="curso_academico" id="curso_academico">
                     <label for="alumnos"><b>Alumno</b></label>
                     <select name="alumnos" id="alumnos">
                         <?php 
@@ -92,6 +92,10 @@
                         <?php 
                             $mysqli->close();
                         ?>
+                    <select name="periodo" id="periodo">
+                        <option value="ordinario">Ordinario</option>
+                        <option value="extraordinario">Extraordinario</option>
+                    </select>
                     <input type="submit" value="Enviar">
                 </form>
             </section>

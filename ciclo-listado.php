@@ -22,7 +22,7 @@
                     <td colspan="3"><h2>Listado de ciclos formativos</h2></td>
                     <td></td>
                     <td colspan="3">
-                        <a class="btn-listado" href="alumno-alta.php">Nuevo ciclo</a>
+                        <a class="btn-listado" href="ciclo-alta.php">Nuevo ciclo</a>
                     </td>
                 </tr>
             </table>
@@ -38,6 +38,7 @@
                 <tr>
                 <th class="cif">Clave ciclo</th>
                 <th><p align="center">Nombre <span class="sortable">&uarr;</span></p></th>
+                <th>Siglas</th>
                 <th>Tipo</th>
                 <th>Horas FCT</th>
                 <th colspan=3>Acciones</th>
@@ -46,7 +47,7 @@
             <tbody>
                 <?php 
                     $mysqli = include_once "conexion-bd.php";
-                    $resultado = $mysqli->query("SELECT clave_ciclo, nombre_ciclo, tipo_ciclo, horas_fct FROM ciclos");
+                    $resultado = $mysqli->query("SELECT clave_ciclo, siglas_ciclo, nombre_ciclo, tipo_ciclo, horas_fct FROM ciclos");
                     $ciclos = $resultado->fetch_all(MYSQLI_ASSOC);
                     foreach ($ciclos as $ciclo)
                     {
@@ -54,6 +55,7 @@
                 <tr>
                 <td class="cif"><?php echo $ciclo["clave_ciclo"] ?></td>
                 <td><?php echo $ciclo["nombre_ciclo"] ?></td>
+                <td><?php echo $ciclo["siglas_ciclo"] ?></td>
                 <td><?php echo $ciclo["tipo_ciclo"] ?></td>
                 <td><?php echo $ciclo["horas_fct"] ?></td>
                 <td><a class="btn-listado" href="ciclo-ver.php?clave_ciclo=<?php echo $ciclo['clave_ciclo'] ?>">Visualizar</a></td>

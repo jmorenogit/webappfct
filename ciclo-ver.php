@@ -32,22 +32,27 @@
             <table class="listado">
             <thead>
                 <tr>
-                    <td>
+                    <td colspan=3>
                         <h2><?php echo $ciclo["nombre_ciclo"] ?></h2>
                     </td>
-                    <th colspan=2>
-                       Clave ciclo: <?php echo $ciclo["clave_ciclo"] ?>
-                    </th>
                 </tr>     
             </thead>
             <tbody>
                 <tr>
-                    <th>Familia profesional</th>
+                    <th>Clave ciclo</th>
+                    <th colspan=2>Familia profesional</th>
+                </tr>
+                <tr>
+                    <td><?php echo $ciclo["clave_ciclo"] ?></td>
+                    <td colspan=2><?php echo $ciclo["familia_profesional"] ?></td>
+                </tr>
+                <tr>
+                    <th>Siglas</th>
                     <th>Tipo ciclo</th>
                     <th>Horas FCT</th>
                 </tr>
                 <tr>
-                    <td><?php echo $ciclo["familia_profesional"] ?></td>
+                    <td><?php echo $ciclo["siglas_ciclo"] ?></td>
                     <td><?php echo $ciclo["tipo_ciclo"] ?></td>
                     <td><?php echo $ciclo["horas_fct"] ?></td>
                 </tr>

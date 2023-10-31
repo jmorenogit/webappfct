@@ -42,23 +42,25 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>Fecha</th>
+                    <th>Curso Académico</th>
                     <th>Empresa</th>
                     <th>Ciclo</th>
                 </tr>
                 <tr>
-                    <td><?php echo $matricula["fecha"] ?></td>
+                    <td><?php echo $matricula["curso_academico"] ?></td>
                     <td><?php echo $matricula["nombre_empresa"] ?></td>
                     <td><?php echo $matricula["nombre_ciclo"] ?></td>
                 </tr>
                 <tr>
-                    <th colspan=3>Profesor</th>
+                    <th colspan=2>Profesor</th>
+                    <th>Período</th>
                 </tr>
                 <tr>
-                    <td colspan=3><?php echo $matricula["nombre_profesor"]." ".$matricula["apellidos_profesor"]?></td>
+                    <td colspan=2><?php echo $matricula["nombre_profesor"]." ".$matricula["apellidos_profesor"]?></td>
+                    <td><?php echo $matricula["periodo"]?></td>
                 </tr>
                 <tr>
-                    <td colspan="3"><a class="btn-listado" href="matricula-listado.php">Volver</a></td>
+                    <td colspan=3><a class="btn-listado" href="matricula-listado.php">Volver</a></td>
                 </tr>
             </tbody>
             </table>
