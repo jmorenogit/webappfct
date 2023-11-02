@@ -20,7 +20,6 @@
             <table class="listado">
                 <tr>
                     <td colspan="3"><h2>Listado de Alumnos</h2></td>
-                    <td></td>
                     <td colspan="3">
                         <a class="btn-listado" href="alumno-alta.php">Nuevo alumno</a>
                     </td>

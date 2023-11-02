@@ -24,6 +24,16 @@ html {
     filter: invert(1);
 } */
 
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a{
+    margin: 1vw;
+}
+
 /* +++++++++++++++++++++++ LISTADOS +++++++++++++++++++++++++++++*/
 .listado {
     background-color: var(--fondobg);

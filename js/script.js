@@ -3,6 +3,7 @@ function darkMode() {
   let element = document.getElementById("html");
   element.classList.toggle("dark-mode");
 }
+
 //******************************* CUADRO BÚSQUEDA  ************************************//
 function search() {
   let input, filter, table, tr, td, i, txtValue;
