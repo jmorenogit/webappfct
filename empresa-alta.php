@@ -30,6 +30,7 @@
                     <input type="text" name="tutor" id="tutor" placeholder="Tutor empresa" pattern="[Aa-Za]{30}" title="Máximo 30 caracteres">
                     <input type="text" name="departamento" id="departamento" placeholder="Departamento" pattern="[Aa-Za]{20}" title="Máximo 20 caracteres">
                     <input type="text" name="actividad_productiva" id="actividad_productiva" placeholder="Actividad Productiva" pattern="[Aa-Za]{20}" title="Máximo 20 caracteres">
+                    <input type="text" name="num_convenio" id="num_convenio" placeholder="Número de convenio" pattern="[0-9]{1-8}" title="Máximo 8 dígitos">
                     <input type="submit" value="Enviar">
                 </form>
             </section>

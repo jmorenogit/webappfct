@@ -15,7 +15,7 @@
     <?php
         $mysqli = include_once("conexion-bd.php");
         $cif = $_GET["cif"];
-        $sentencia = $mysqli->prepare("SELECT cif,nombre_empresa,calle,cod_postal,ciudad,provincia,telefono,email,responsable_nombre,responsable_dni,tutor,departamento,actividad_productiva FROM empresas WHERE cif = ?");
+        $sentencia = $mysqli->prepare("SELECT * FROM empresas WHERE cif = ?");
         $sentencia->bind_param("s", $cif);
         $sentencia->execute();
         $resultado = $sentencia->get_result();
@@ -62,11 +62,13 @@
                     <td><?php echo $empresa["email"] ?></td>
                 </tr>
                 <tr>
-                    <th colspan=2>Responsable</th>
+                    <th>Responsable</th>
+                    <th>Nº Convenio</th>
                     <th>Responsable DNI</th>   
                 </tr>
                 <tr>
-                    <td colspan=2><?php echo $empresa["responsable_nombre"] ?></td>
+                    <td><?php echo $empresa["responsable_nombre"] ?></td>
+                    <td><?php echo $empresa["num_convenio"] ?></td>
                     <td><?php echo $empresa["responsable_dni"] ?></td>      
                 </tr>
                 <tr>

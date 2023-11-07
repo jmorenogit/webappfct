@@ -17,10 +17,11 @@ $responsable_dni = $_POST["responsable_dni"];
 $tutor = $_POST["tutor"];
 $departamento = $_POST["departamento"];
 $actividad_productiva = $_POST["actividad_productiva"];
+$num_convenio = $_POST["num_convenio"];
 
 //Inserción en Base de Datos
-$sentencia = $mysqli->prepare("INSERT INTO empresas (cif,nombre_empresa,calle,cod_postal,ciudad,provincia,telefono,email,responsable_nombre,responsable_dni,tutor,departamento,actividad_productiva) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
-$sentencia->bind_param("sssssssssssss", $cif, $nombre_empresa, $calle, $cod_postal, $ciudad, $provincia, $telefono, $email, $responsable_nombre, $responsable_dni, $tutor, $departamento, $actividad_productiva);
+$sentencia = $mysqli->prepare("INSERT INTO empresas (cif,nombre_empresa,calle,cod_postal,ciudad,provincia,telefono,email,responsable_nombre,responsable_dni,tutor,departamento,actividad_productiva,num_convenio) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+$sentencia->bind_param("ssssssssssssss", $cif, $nombre_empresa, $calle, $cod_postal, $ciudad, $provincia, $telefono, $email, $responsable_nombre, $responsable_dni, $tutor, $departamento, $actividad_productiva, $num_convenio);
 $sentencia->execute();
 
 $mysqli->close();

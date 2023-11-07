@@ -15,7 +15,7 @@
     <?php
         $mysqli = include_once("conexion-bd.php");
         $cif = $_GET["cif"];
-        $sentencia = $mysqli->prepare("SELECT cif,nombre_empresa,calle,cod_postal,ciudad,provincia,telefono,email,responsable_nombre,responsable_dni,tutor,departamento,actividad_productiva FROM empresas WHERE cif = ?");
+        $sentencia = $mysqli->prepare("SELECT cif,nombre_empresa,calle,cod_postal,ciudad,provincia,telefono,email,responsable_nombre,responsable_dni,tutor,departamento,actividad_productiva,num_convenio FROM empresas WHERE cif = ?");
         $sentencia->bind_param("s", $cif);
         $sentencia->execute();
         $resultado = $sentencia->get_result();
@@ -44,6 +44,7 @@
                 <label for="tutor">Tutor empresa</label><input type="text" name="tutor" id="tutor" value="<?php echo $empresa['tutor'] ?>" pattern="[Aa-Za]{30}" title="Máximo 30 caracteres">
                 <label for="departamento">Departamento</label><input type="text" name="departamento" id="departamento" value="<?php echo $empresa['departamento'] ?>" pattern="[Aa-Za]{20}" title="Máximo 20 caracteres">
                 <label for="actividad_productiva">Actividad Productiva</label><input type="text" name="actividad_productiva" id="actividad_productiva" value="<?php echo $empresa['actividad_productiva'] ?>" pattern="[Aa-Za]{20}" title="Máximo 20 caracteres">
+                <label for="num_convenio">Número de convenio</label><input type="text" name="num_convenio" id="num_convenio" value="<?php echo $empresa['num_convenio'] ?>" pattern="[0-9]{1-8}" title="Máximo 8 dígitos">
                 <input type="submit" value="Enviar">
             </form>
         </section>
