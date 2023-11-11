@@ -20,7 +20,8 @@
                     <label for="num_matricula"><b>Número matrícula</b></label>
                     <input type="text" name="num_matricula" id="num_matricula" required>
                     <label for="curso_academico"><b>Curso Academico</b></label>
-                    <input type="text" name="curso_academico" id="curso_academico">
+                    <?php $anioProx=date("y")+1 ;?>
+                    <input type="text" name="curso_academico" id="curso_academico" value="<?php echo date("Y").'-'. $anioProx ?>" readonly>
                     <label for="alumnos"><b>Alumno</b></label>
                     <select name="alumnos" id="alumnos">
                         <?php 
@@ -92,6 +93,7 @@
                         <?php 
                             $mysqli->close();
                         ?>
+                    <label for="periodo"><b>Periodo</b></label>
                     <select name="periodo" id="periodo">
                         <option value="ordinario">Ordinario</option>
                         <option value="extraordinario">Extraordinario</option>

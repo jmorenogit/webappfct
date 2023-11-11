@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         jsPDF: {
           unit: "cm",
           format: "a4",
-          orientation: 'landscape' //portrait
+          orientation: 'landscape' // portrait
         }
       })
       .from($elementoParaConvertir)

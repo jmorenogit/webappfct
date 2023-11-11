@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+.contentToPdf{
+    width: 99%;
+}
+
+.pCentrado{
+    display: flex;
+    justify-content: center;
+}
+
+.p2columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabeceraImg{
+    height: 100px;
+}
+
+.borde{
+    border: thin solid black;
+    padding: 10px;
+}
+
+table{
+    border: thin solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.firma{
+    font-size: small;
+}

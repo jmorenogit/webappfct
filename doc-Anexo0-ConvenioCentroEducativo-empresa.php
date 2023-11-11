@@ -61,7 +61,7 @@
             <td><b>provincia de</b> BADAJOZ <b>, calle/plaza</b> Avda. Fuente del Maestre, S/N</td>
         </tr>
         <tr>
-            <td><b>D.P.</b>06300 <b>, con C.I.F.</b> _____ <b> Teléfono</b> 924 – 029.924 / 5 / 6 <b>Fax</b> 924 – 029.927</td>
+            <td><b>D.P.</b>06300 <b>, con C.I.F.</b> S0600123D <b> Teléfono</b> 924 – 029.924 / 5 / 6 <b>Fax</b> 924 – 029.927</td>
         </tr>
         <tr>
             <td><b>correo electrónico</b> ies.suarezdefigueroa@educarex.es</td>
