@@ -111,7 +111,13 @@
                                 <?php echo $alumno['horas_fct'] ?>
                         </td>
                         <td class="borde">
-                                <?php echo $alumno['periodo'] ?>
+                            <?php 
+                                if($alumno['periodo']==="ordinario"){
+                                    echo "<span>Del 20 de marzo de ". substr($empresa["curso_academico"],0,4) ." al 20 de junio de " . substr($empresa["curso_academico"],0,2) . substr($empresa["curso_academico"],-2) ."</span>";
+                                }else{
+                                    echo "<span>Del 20 de septiembre de ". substr($empresa["curso_academico"],0,4) ." al 20 de diciembre de " . substr($empresa["curso_academico"],0,2) . substr($empresa["curso_academico"],-2) ."</span>";
+                                }
+                                ?>
                         </td>
                     </tr>
                 <?php
