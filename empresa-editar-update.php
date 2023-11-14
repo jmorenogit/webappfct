@@ -17,10 +17,11 @@ $tutor = $_POST["tutor"];
 $departamento = $_POST["departamento"];
 $actividad_productiva = $_POST["actividad_productiva"];
 $num_convenio = $_POST["num_convenio"];
+$fecha_convenio = $_POST["fecha_convenio"];
 
 //Actualización en Base de Datos
-$sentencia = $mysqli->prepare("UPDATE empresas SET nombre_empresa=?, calle=?, cod_postal=?, ciudad=?, provincia=?, telefono=?, email=?, responsable_nombre=?, responsable_dni=?, tutor=?, departamento=?, actividad_productiva=?, num_convenio=? WHERE cif=?");
-$sentencia->bind_param("ssssssssssssss", $nombre_empresa, $calle, $cod_postal, $ciudad, $provincia, $telefono, $email, $responsable_nombre, $responsable_dni, $tutor, $departamento, $actividad_productiva, $num_convenio, $cif);
+$sentencia = $mysqli->prepare("UPDATE empresas SET nombre_empresa=?, calle=?, cod_postal=?, ciudad=?, provincia=?, telefono=?, email=?, responsable_nombre=?, responsable_dni=?, tutor=?, departamento=?, actividad_productiva=?, num_convenio=?, fecha_convenio=? WHERE cif=?");
+$sentencia->bind_param("sssssssssssssss", $nombre_empresa, $calle, $cod_postal, $ciudad, $provincia, $telefono, $email, $responsable_nombre, $responsable_dni, $tutor, $departamento, $actividad_productiva, $num_convenio, $fecha_convenio, $cif);
 $sentencia->execute();
 
 $mysqli->close();

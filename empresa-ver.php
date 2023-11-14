@@ -32,12 +32,15 @@
             <table class="listado">
             <thead>
                 <tr>
-                    <td colspan=2>
+                    <td>
                         <h2><?php echo $empresa["nombre_empresa"] ?></h2>
                     </td>
                     <th>
                        CIF: <?php echo $empresa["cif"] ?>
                     </th>
+                    <td>
+                        <b>Nº convenio:</b> <?php echo $empresa["num_convenio"] ?>
+                    </td>
                 </tr>     
             </thead>
             <tbody>
@@ -63,12 +66,12 @@
                 </tr>
                 <tr>
                     <th>Responsable</th>
-                    <th>Nº Convenio</th>
+                    <th>Fecha Convenio</th>
                     <th>Responsable DNI</th>   
                 </tr>
                 <tr>
                     <td><?php echo $empresa["responsable_nombre"] ?></td>
-                    <td><?php echo $empresa["num_convenio"] ?></td>
+                    <td><?php echo $empresa["fecha_convenio"] ?></td>
                     <td><?php echo $empresa["responsable_dni"] ?></td>      
                 </tr>
                 <tr>

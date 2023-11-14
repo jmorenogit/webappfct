@@ -49,7 +49,7 @@
         <p class="pCentrado borde">
             <span>
                 Relación de alumnos acogidos al CONVENIO específico número <?php echo $empresa['num_convenio'] ?>
-                suscrito con fecha_____de____________de 20____ entre
+                suscrito con fecha <?php echo date('d', strtotime($empresa['fecha_convenio']))?> de <?php echo date('m', strtotime($empresa['fecha_convenio']))?> de <?php echo date('Y', strtotime($empresa['fecha_convenio']))?> entre
                 <br>
                 el Centro educativo I.E.S. Suarez de Figueroa y la empresa <?php echo $empresa['nombre_empresa'] ?> localidad <?php echo $empresa['ciudad'] ?>
                 que realizarán Formación en Centros de Trabajo (FCT)
@@ -91,7 +91,7 @@
                 
 
                 <?php
-                    $resultado2 = $mysqli->query("SELECT * FROM empresas E JOIN matriculas M ON E.cif = M.empresa JOIN alumnos A ON A.dni = M.alumno JOIN ciclos C ON C.clave_ciclo = M.ciclo JOIN profesores P ON P.dni_profesor = M.profesor WHERE empresa=$cif");
+                    $resultado2 = $mysqli->query("SELECT * FROM empresas E JOIN matriculas M ON E.cif = M.empresa JOIN alumnos A ON A.dni = M.alumno JOIN ciclos C ON C.clave_ciclo = M.ciclo JOIN profesores P ON P.dni_profesor = M.profesor WHERE empresa='$cif'");
                     $alumnos = $resultado2->fetch_all(MYSQLI_ASSOC);
                     foreach ($alumnos as $alumno)
                     {
