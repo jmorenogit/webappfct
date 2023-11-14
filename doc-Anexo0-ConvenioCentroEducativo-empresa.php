@@ -22,9 +22,9 @@
     ?>
 
 <body class="c36 doc-content">
-    <button id='btnCrearPdf' class='btnCrearPdf'>PDF Anexo 0</button>
+    <button id='btnCrearPdf' class='btnCrearPdf' value='portrait'>PDF Anexo 0</button>
 
-    <div class="contentToPdf">
+    <div class="contentToPdf" style="width:99%">
 
   <p class="c4"><span class="c11"></span>
   <span
@@ -35,6 +35,7 @@
       style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 83.07px; height: 73.00px;"><img alt="UE" src="images/ue.png" style="width: 83.07px; height: 73.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
         title=""></span>
   </p>
+  <p>&nbsp;</p>
   <p class="c20 c6 c30"><span class="c21"></span></p>
   <p class="c1"><span class="c21">DIRECCI&Oacute;N GENERAL DE FORMACI&Oacute;N PROFESIONAL, INNOVACI&Oacute;N E INCLUSI&Oacute;N EDUCATIVA</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 317.80px; height: 39.40px;"><b>FORMACIÓN EN CENTROS DE TRABAJO<br>CONVENIO<br>CENTRO EDUCATIVO-EMPRESA</b></span>
 </p>
@@ -43,7 +44,7 @@
     <p class="c10 c6"><span class="c14"></span></p>
     <p class="c10 c6"><span class="c14"></span></p>
     <p class="c10"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;CONVENIO Nº <?php echo $empresa['num_convenio'] ?>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<b>ANEXO 0 (Anverso)</b></p>
-    
+    <p>&nbsp;</p>
     <table style="border: 1px solid black; width: 99%;font-size:0.9rem;">
         <tr>
             <td><b>De una parte:</b></td>
@@ -66,14 +67,15 @@
         <tr>
             <td><b>correo electrónico</b> ies.suarezdefigueroa@educarex.es</td>
         </tr>
+        <td><b>De otra parte:</b></td>
         <tr>
-            <td><b>D/Dña. </b><?php echo $empresa['responsable_nombre'] ?><b>con D.N.I. </b><?php echo $empresa['responsable_dni'] ?></td>
+            <td><b>D/Dña. </b><?php echo $empresa['responsable_nombre'] ?><b> con D.N.I. </b><?php echo $empresa['responsable_dni'] ?></td>
         </tr>
         <tr>
             <td><b>como representante legal de la Empresa/Agrupación, o Entidad colaboradora </b><?php echo $empresa['nombre_empresa'] ?></td>
         </tr>
         <tr>
-            <td><b>localizado en </b> <?php echo $empresa['ciudad'] ?> provincia de </b> <?php echo $empresa['provincia'] ?> </td>
+            <td><b>localizado en </b> <?php echo $empresa['ciudad'] ?> <b> provincia de </b> <?php echo $empresa['provincia'] ?> </td>
         </tr>
         <tr>
             <td><b>calle/plaza </b> <?php echo $empresa['calle'] ?> <b>D.P. </b> <?php echo $empresa['cod_postal'] ?> <b>, con C.I.F. </b> <?php echo $empresa['cif'] ?> <b>, Teléfono </b> <?php echo $empresa['telefono'] ?> </td>
@@ -82,6 +84,7 @@
             <td><b>correo electrónico </b> <?php echo $empresa['email'] ?> </td>
         </tr>
     </table>
+        <p>&nbsp;</p>
         <p class="c1"><span class="c2">EXPONEN</span></p>
         <ul class="c3 lst-kix_list_49-0 start">
           <li class="c4 c12 li-bullet-0"><span class="c0">Que ambas partes se reconocen rec&iacute;procamente capacidad y legitimidad parta convenir.</span></li>
@@ -107,7 +110,9 @@
               <p class="c5 c6"><span class="c0"></span></p>
             </td>
             <td class="c33" colspan="2" rowspan="1">
+              <p>&nbsp;</p>
               <p class="c4"><span class="c0">En Zafra a día <?php echo date("j")?> del <?php echo date("m")?> de <?php echo date("Y")?></span></p>
+              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
             </td>
           </tr>
           <tr class="c7">
@@ -139,17 +144,18 @@
           </tr>
           <tr class="c35">
             <td class="c22" colspan="1" rowspan="1">
-              <p class="c20"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fdo.:</span></p>
+              <p class="c20"><span class="c0"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fdo.:</span></p>
             </td>
             <td class="c22" colspan="1" rowspan="1">
-              <p class="c20"><span class="c0">Fdo.:</span></p>
+              <p class="c20"><span class="c0"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>Fdo.:</span></p>
             </td>
             <td class="c22" colspan="1" rowspan="1">
-              <p class="c20"><span class="c0">&nbsp; &nbsp; &nbsp;Fdo.:</span></p>
+              <p class="c20"><span class="c0"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>&nbsp; &nbsp; &nbsp;Fdo.:</span></p>
             </td>
           </tr>
         </table>
-        <p>&nbsp;</p>
+        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
         <p class="c4"><span class="c18">CL&Aacute;USULAS</span><span class="c25">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           <span
             class="c18">(Anexo O, Reverso)</span>

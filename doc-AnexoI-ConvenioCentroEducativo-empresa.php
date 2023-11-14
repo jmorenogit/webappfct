@@ -23,7 +23,7 @@
 <body>
 
     <p class='pCentrado'>
-        <button id='btnCrearPdf' class='btnCrearPdf'>PDF Anexo I</button>
+        <button id='btnCrearPdf' class='btnCrearPdf' value='portrait'>PDF Anexo I</button>
     </p>
     
     <div class="contentToPdf">

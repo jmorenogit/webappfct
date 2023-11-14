@@ -18,7 +18,7 @@
         $mysqli->close();
     ?>
 
-<body class="c23 doc-content"><button id='btnCrearPdf' class='btnCrearPdf'>PDF Anexo II</button>
+<body class="c23 doc-content"><button id='btnCrearPdf' class='btnCrearPdf' value='landscape'>PDF Anexo II</button>
 <div class="contentToPdf">
 
     <p class="c19"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 236.93px; height: 60.87px;"><img alt="" src="images/junta.jpg" style="width: 236.93px; height: 60.87px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 83.07px; height: 73.00px;"><img alt="UE" src="images/ue.png" style="width: 83.07px; height: 73.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c16"><span class="c14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
@@ -39,8 +39,10 @@
      <br>
     N&uacute;mero de Convenio:&nbsp; <?php echo $matricula["num_convenio"] ?></span></p><p class="c11">
     <span class="c32">NOMBRE Y APELLIDOS DEL/LA ALUMNO/A</span><span class="c1">&nbsp; &nbsp; &nbsp;<?php echo $matricula["nombre"]." ".$matricula["apellidos"] ?></span></p><br></td><td class="c10" colspan="1" rowspan="1"><p class="c11"><span class="c1">&nbsp; HOJA N&ordm;:</span></p></td></tr>
-    <tr class="c20"><td class="c25" colspan="2" rowspan="1"><p class="c11"><span class="c1"><br>FAMILIA PROFESIONAL: &nbsp;<?php echo $matricula["familia_profesional"] ?> &nbsp;&nbsp;CICLO FORMATIVO:&nbsp;&nbsp;<?php echo $matricula["nombre_ciclo"] ." ". $matricula["clave_ciclo"] ?></span></p><p class="c11"><span class="c1">&Aacute;REA O DEPARTAMENTO DEL CENTRO DE TRABAJO: &nbsp;<?php echo $matricula["departamento"] ?> &nbsp;TIEMPO:&nbsp;<?php echo $matricula["horas_fct"] ?>&nbsp;HORAS&nbsp;</span></p><p class="c3"><span class="c1"></span></p></td></tr></table><p class="c3"><span class="c5"></span></p><a id="t.d6e4f668800455a5a65c7bfdfb33cd6e3f9a6336"></a><a id="t.1"></a><table class="c15"><tr class="c20"><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c21">ACTIVIDADES FORMATIVO-PRODUCTIVAS</span></p></td><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c21">ACTIVIDADES DE EVALUACI&Oacute;N</span></p></td><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c21">CAPACIDADES TERMINALES</span></p><p class="c0"><span class="c21">INVOLUCRADAS</span></p></td></tr>
-    <tr class="c20"><td class="c30" colspan="1" rowspan="1"><p class="c3"><span class="c5"><ul>
+    <tr class="c20"><td class="c25" colspan="2" rowspan="1"><p class="c11"><span class="c1"><br>FAMILIA PROFESIONAL: &nbsp;<?php echo $matricula["familia_profesional"] ?> &nbsp;&nbsp;CICLO FORMATIVO:&nbsp;&nbsp;<?php echo $matricula["nombre_ciclo"] ." ". $matricula["clave_ciclo"] ?></span></p><p class="c11"><span class="c1">&Aacute;REA O DEPARTAMENTO DEL CENTRO DE TRABAJO: &nbsp;<?php echo $matricula["departamento"] ?> &nbsp;TIEMPO:&nbsp;<?php echo $matricula["horas_fct"] ?>&nbsp;HORAS&nbsp;</span></p><p class="c3"><span class="c1"></span></p></td></tr></table><p class="c3"><span class="c5"></span></p><a id="t.d6e4f668800455a5a65c7bfdfb33cd6e3f9a6336"></a><a id="t.1"></a>
+
+    <table class="c15"><tr class="c20"><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c21">ACTIVIDADES FORMATIVO-PRODUCTIVAS</span></p></td><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c21">ACTIVIDADES DE EVALUACI&Oacute;N</span></p></td><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c21">CAPACIDADES TERMINALES</span></p><p class="c0"><span class="c21">INVOLUCRADAS</span></p></td></tr>
+    <tr class="c20"><td class="c30" colspan="1" rowspan="1"><span class="c5"><ul>
         <li>Mantener una comunicación lo más afable posible con las distintas personas de la empresa, así como una actitud receptiva a las sugerencias que le formulen.</li>
         <li>Mantener una comunicación lo más afable posible con las distintas personas de la empresa, así como una actitud receptiva a las sugerencias que le formulen.</li>
         <li>Mantener una comunicación lo más afable posible con las distintas personas de la empresa, así como una actitud receptiva a las sugerencias que le formulen.</li>
@@ -69,9 +71,9 @@
         <li>Verificar el funcionamiento de páginas web dinámicas generadas a partir de scripts de servidor.</li>
         <li>Mantenimiento de la información web.</li>
     </ul>
-</span></p></td>
+</span></td>
 
-<td class="c2" colspan="1" rowspan="1"><p class="c3"><span class="c5">
+<td class="c2" colspan="1" rowspan="1"><span class="c5">
     <ul>
         <li>Analizar las repercusiones de su actividad en el sistema productivo y en el centro de trabajo.</li>
         <li>Interpretar y ejecutar con diligencia las instrucciones recibidas, responsabilizándose del trabajo asignado y comunicándose eficazmente con la persona adecuada en cada momento.</li>
@@ -88,15 +90,15 @@
         <li>Probar el correcto funcionamiento de los clientes de internet conectados a la máquina, así como la configuración de accesos rápidos a los sitios webs.</li>
         <li>Comprobar que la información web está actualizada.</li>
     </ul>
-</span></p></td>
-<td class="c7" colspan="1" rowspan="1"><p class="c3"><span class="c5">
+</span></td>
+<td class="c7" colspan="1" rowspan="1"><span class="c5">
     <ul>
         <li>Actuar de forma responsable y respetuosa en el entorno de trabajo.</li>
         <li>Participar a su nivel en la instalación y mantenimiento de servicios de redes locales, equipos multiusuario y servicios de Internet, siguiendo los procedimientos establecidos.</li>
         <li>Realizar la asistencia al usuario, participando en la resolución de los problemas que se presentan en la explotación de aplicaciones ofimáticas, siguiendo protocolos establecidos y en el tiempo adecuado.</li>
         <li>Participar a su nivel en el mantenimiento de portales de información, siguiendo los procedimientos establecidos.</li>
     </ul>
-</span></p></td></tr></table><p class="c11"><span class="c1">(*) Cumplimentar en la &uacute;ltima hoja del programa formativo</span></p><p class="c11"><span class="c1">(*) EL/LA PROFESOR/A-TUTOR/A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FECHA _______/____________________/20______ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*) EL/LA RESPONSABLE DEL C. DE TRABAJO &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*) &nbsp;V&ordm; B&ordm; INSPECCI&Oacute;N</span></p>
+</span></td></tr></table><p class="c11"><span class="c1">(*) Cumplimentar en la &uacute;ltima hoja del programa formativo</span></p><p class="c11"><span class="c1">(*) EL/LA PROFESOR/A-TUTOR/A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FECHA _______/____________________/20______ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*) EL/LA RESPONSABLE DEL C. DE TRABAJO &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*) &nbsp;V&ordm; B&ordm; INSPECCI&Oacute;N</span></p>
 
     </div>
     <script src="js/html2pdf.bundle.min.js"></script>
