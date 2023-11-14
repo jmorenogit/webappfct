@@ -17,8 +17,8 @@
             <section>
                 <form class="formulario" action="matricula-alta-proc.php" method="post">
                     <legend><h2>Alta nueva matrícula</h2></legend>
-                    <label for="num_matricula"><b>Número matrícula</b></label>
-                    <input type="text" name="num_matricula" id="num_matricula" required>
+                    <!-- <label for="num_matricula"><b>Número matrícula</b></label>
+                    <input type="text" name="num_matricula" id="num_matricula" required> -->
                     <label for="curso_academico"><b>Curso Academico</b></label>
                     <?php $anioProx=date("y")+1 ;?>
                     <input type="text" name="curso_academico" id="curso_academico" value="<?php echo date("Y").'-'. $anioProx ?>" readonly>
