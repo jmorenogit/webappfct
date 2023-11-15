@@ -56,7 +56,7 @@
                 <td><?php echo $profesor["apellidos_profesor"] ?></td>
                 <td><a class="btn-listado" href="profesor-ver.php?dni_profesor=<?php echo $profesor['dni_profesor'] ?>">Visualizar</a></td>
                 <td><a class="btn-listado" href="profesor-editar.php?dni_profesor=<?php echo $profesor['dni_profesor'] ?>">Editar</a></td>
-                <td><a class="btn-listado" href="profesor-eliminar.php?dni_profesor=<?php echo $profesor['dni_profesor'] ?>">Eliminar</a></td>
+                <td><a class="btn-listado eliminar" href="profesor-eliminar.php?dni_profesor=<?php echo $profesor['dni_profesor'] ?>" onclick="return confirm('¿Eliminar registro?')">Eliminar</a></td>
                 </tr>
 
                 <?php }

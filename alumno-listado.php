@@ -60,7 +60,7 @@
                 <td><a class="btn-listado" href="alumno-ver.php?dni=<?php echo $alumno['dni'] ?>">Visualizar</a></td>
                 <td><a class="btn-listado" href="alumno-editar.php?dni=<?php echo $alumno['dni'] ?>">Editar</a></td>
                 <td><a class="btn-listado" href="doc-AnexoIII-Fichaindividualdeseguimientoyevaluación.php?dni=<?php echo $alumno['dni'] ?>" target="_blank">Anexo III</a></td>
-                <td><a class="btn-listado" href="alumno-eliminar.php?dni=<?php echo $alumno['dni'] ?>">Eliminar</a></td>
+                <td><a class="btn-listado" href="alumno-eliminar.php?dni=<?php echo $alumno['dni'] ?>" onclick="return confirm('¿Eliminar registro?')">Eliminar</a></td>
                 </tr>
 
                 <?php }

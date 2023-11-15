@@ -58,7 +58,7 @@
                 <td><?php echo $empresa["telefono"] ?></td>
                 <td><a class="btn-listado" href="empresa-ver.php?cif=<?php echo $empresa['cif'] ?>">Visualizar</a></td>
                 <td><a class="btn-listado" href="empresa-editar.php?cif=<?php echo $empresa['cif'] ?>">Editar</a></td>
-                <td><a class="btn-listado" href="empresa-eliminar.php?cif=<?php echo $empresa['cif'] ?>">Eliminar</a></td>
+                <td><a class="btn-listado" href="empresa-eliminar.php?cif=<?php echo $empresa['cif'] ?>" onclick="return confirm('¿Eliminar registro?')">Eliminar</a></td>
                 <td><a class="btn-listado" href="doc-Anexo0-ConvenioCentroEducativo-empresa.php?cif=<?php echo $empresa['cif'] ?>" target="_blank">Anexo 0</a></td>
                 <td><a class="btn-listado" href="doc-AnexoI-ConvenioCentroEducativo-empresa.php?cif=<?php echo $empresa['cif'] ?>" target="_blank">Anexo I</a></td>
                 </tr>

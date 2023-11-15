@@ -60,7 +60,7 @@
                 <td><?php echo $matricula["siglas_ciclo"] ?></td>
                 <td><a class="btn-listado" href="matricula-ver.php?num_matricula=<?php echo $matricula['num_matricula'] ?>">Visualizar</a></td>
                 <td><a class="btn-listado" href="doc-AnexoII-ProgramaFormativo.php?num_matricula=<?php echo $matricula['num_matricula'] ?>" target='_blank'>Anexo II</a></td>
-                <td><a class="btn-listado" href="matricula-eliminar.php?num_matricula=<?php echo $matricula['num_matricula'] ?>">Eliminar</a></td>
+                <td><a class="btn-listado" href="matricula-eliminar.php?num_matricula=<?php echo $matricula['num_matricula'] ?>" onclick="return confirm('¿Eliminar registro?')">Eliminar</a></td>
                 </tr>
 
                 <?php }

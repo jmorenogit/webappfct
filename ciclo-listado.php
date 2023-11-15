@@ -60,7 +60,7 @@
                 <td><?php echo $ciclo["horas_fct"] ?></td>
                 <td><a class="btn-listado" href="ciclo-ver.php?clave_ciclo=<?php echo $ciclo['clave_ciclo'] ?>">Visualizar</a></td>
                 <td><a class="btn-listado" href="ciclo-editar.php?clave_ciclo=<?php echo $ciclo['clave_ciclo'] ?>">Editar</a></td>
-                <td><a class="btn-listado" href="ciclo-eliminar.php?clave_ciclo=<?php echo $ciclo['clave_ciclo'] ?>">Eliminar</a></td>
+                <td><a class="btn-listado" href="ciclo-eliminar.php?clave_ciclo=<?php echo $ciclo['clave_ciclo'] ?>" onclick="return confirm('¿Eliminar registro?')">Eliminar</a></td>
                 </tr>
 
                 <?php }
