@@ -37,10 +37,10 @@
                 </tr>
                 <tr>
                 <th class="cif">CIF</th>
-                <th><p align="center">Nombre <span class="sortable">&uarr;</span></p></th>
+                <th><p>Nombre <span class="sortable">&uarr;</span></p></th>
                 <th>Localidad</th>
                 <th>Teléfono</th>
-                <th colspan=4>Acciones</th>
+                <th colspan=5>Acciones</th>
                 </tr>
             </thead>
             <tbody>
