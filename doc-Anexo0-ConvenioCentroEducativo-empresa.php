@@ -18,12 +18,14 @@
         if (!$empresa) {
             exit("No hay resultados para esa empresa");
         }
+
+        $sentencia2 = $mysqli->query("SELECT * FROM centros");
+        $centro = $sentencia2->fetch_assoc();
         $mysqli->close();
     ?>
 
 <body class="c36 doc-content">
     <button id='btnCrearPdf' class='btnCrearPdf' value='portrait'>PDF Anexo 0</button>
-
     <div class="contentToPdf" style="width:99%">
 
   <p class="c4"><span class="c11"></span>
@@ -50,22 +52,22 @@
             <td><b>De una parte:</b></td>
         </tr>
         <tr>
-            <td><b>D/Dña.</b>______</td>
+            <td><b>D/Dña.</b> <?php echo $centro['director_nombre'];?></td>
         </tr>
         <tr>
-            <td><b>con D.N.I.</b> ____ <b>como Director/a del Centro Educativo</b> I.E.S. SUÁREZ DE FIGUEROA</td>
+            <td><b>con D.N.I.</b> <?php echo $centro['director_dni'];?> <b>como Director/a del Centro Educativo</b> <?php echo $centro['nombre_centro'];?></td>
         </tr>
         <tr>
-            <td><b>Código de Centro</b> 06005111 <b>localizado en</b> ZAFRA</td>
+            <td><b>Código de Centro</b> <?php echo $centro['codigo_centro'];?> <b>localizado en</b> <?php echo $centro['ciudad_centro'];?></td>
         </tr>
         <tr>
-            <td><b>provincia de</b> BADAJOZ <b>, calle/plaza</b> Avda. Fuente del Maestre, S/N</td>
+            <td><b>provincia de</b> <?php echo $centro['provincia_centro'];?> <b>, calle/plaza</b> <?php echo $centro['calle_centro'];?></td>
         </tr>
         <tr>
-            <td><b>D.P.</b>06300 <b>, con C.I.F.</b> S0600123D <b> Teléfono</b> 924 – 029.924 / 5 / 6 <b>Fax</b> 924 – 029.927</td>
+            <td><b>D.P.</b> <?php echo $centro['cod_postal_centro'];?> <b>, con C.I.F.</b> <?php echo $centro['cif_centro'];?> <b> Teléfono</b> <?php echo $centro['telefono_centro'];?><b>Fax</b> <?php echo $centro['fax_centro'];?></td>
         </tr>
         <tr>
-            <td><b>correo electrónico</b> ies.suarezdefigueroa@educarex.es</td>
+            <td><b>correo electrónico</b> <?php echo $centro['email_centro'];?></td>
         </tr>
         <td><b>De otra parte:</b></td>
         <tr>
