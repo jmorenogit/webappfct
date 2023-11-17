@@ -6,13 +6,13 @@
 
 <?php
         $mysqli = include_once("conexion-bd.php");
-        $dni = $_GET["dni"];
-        $sentencia = $mysqli->prepare("SELECT num_matricula FROM matriculas WHERE alumno=?");
-        $sentencia->bind_param("s", $dni);
-        $sentencia->execute();
-        $resultado = $sentencia->get_result();
-        $num_matricula = $resultado->fetch_assoc();
-        $num_matricula = $num_matricula["num_matricula"];
+        $num_matricula = $_GET["num_matricula"];
+        // $sentencia = $mysqli->prepare("SELECT num_matricula FROM matriculas WHERE alumno=?");
+        // $sentencia->bind_param("s", $dni);
+        // $sentencia->execute();
+        // $resultado = $sentencia->get_result();
+        // $num_matricula = $resultado->fetch_assoc();
+        // $num_matricula = $num_matricula["num_matricula"];
         $sentencia = $mysqli->prepare("SELECT * FROM alumnos A JOIN matriculas M ON A.dni = M.alumno JOIN empresas E ON E.cif = M.empresa JOIN ciclos C ON C.clave_ciclo = M.ciclo JOIN profesores P ON P.dni_profesor = M.profesor WHERE num_matricula=?");
         $sentencia->bind_param("s", $num_matricula);
         $sentencia->execute();

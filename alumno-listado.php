@@ -40,7 +40,7 @@
                 <th>Apellidos</th>
                 <th>Localidad</th>
                 <th>Teléfono</th>
-                <th colspan=5>Acciones</th>
+                <th colspan=3>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -59,8 +59,6 @@
                 <td><?php echo $alumno["telefono"] ?></td>
                 <td><a class="btn-listado" href="alumno-ver.php?dni=<?php echo $alumno['dni'] ?>">Visualizar</a></td>
                 <td><a class="btn-listado" href="alumno-editar.php?dni=<?php echo $alumno['dni'] ?>">Editar</a></td>
-                <td><a class="btn-listado" href="doc-AnexoIII-Fichaseguimiento.php?dni=<?php echo $alumno['dni'] ?>" target="_blank">Anexo III</a></td>
-                <td><a class="btn-listado" href="doc-AnexoIV-Valoracioncentrodetrabajo.php?dni=<?php echo $alumno['dni'] ?>" target="_blank">Anexo IV</a></td>
                 <td><a class="btn-listado" href="alumno-eliminar.php?dni=<?php echo $alumno['dni'] ?>" onclick="return confirm('¿Eliminar registro?')">Eliminar</a></td>
                 </tr>
 

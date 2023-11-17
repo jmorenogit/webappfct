@@ -37,11 +37,11 @@
                 </tr>
                 <tr>
                 <th class="cif">Número matrícula</th>
-                <th><p align="center">Alumno<span class="sortable">&uarr;</span></p></th>
+                <th><p>Alumno<span class="sortable">&uarr;</span></p></th>
                 <th>Curso académico<span class="sortable">&uarr;</span></th>   
                 <th>Empresa</th>
                 <th>Ciclo</th>
-                <th colspan=3>Acciones</th>
+                <th colspan=5>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -60,6 +60,8 @@
                 <td><?php echo $matricula["siglas_ciclo"] ?></td>
                 <td><a class="btn-listado" href="matricula-ver.php?num_matricula=<?php echo $matricula['num_matricula'] ?>">Visualizar</a></td>
                 <td><a class="btn-listado" href="doc-AnexoII-ProgramaFormativo.php?num_matricula=<?php echo $matricula['num_matricula'] ?>" target='_blank'>Anexo II</a></td>
+                <td><a class="btn-listado" href="doc-AnexoIII-Fichaseguimiento.php?num_matricula=<?php echo $matricula['num_matricula'] ?>" target="_blank">Anexo III</a></td>
+                <td><a class="btn-listado" href="doc-AnexoIV-Valoracioncentrodetrabajo.php?num_matricula=<?php echo $matricula['num_matricula'] ?>" target="_blank">Anexo IV</a></td>
                 <td><a class="btn-listado" href="matricula-eliminar.php?num_matricula=<?php echo $matricula['num_matricula'] ?>" onclick="return confirm('¿Eliminar registro?')">Eliminar</a></td>
                 </tr>
 
