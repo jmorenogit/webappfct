@@ -24,6 +24,17 @@ html {
     filter: invert(1);
 } */
 
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.creditos{
+    font-size: .9rem;
+    text-align: center;
+}
+
 .menu {
     display: flex;
     align-items: center;
